@@ -13,6 +13,7 @@ class Window:
         self.HEIGHT = 600
         self.TOP = 50
         self.LEFT = 100
+        self.API_KEY = ""
 
         self.init_window()
 
@@ -45,7 +46,7 @@ class Window:
         t1.start()
 
     def getNews(self):
-        resp = requests.get("https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=52b28bccbbd04d18a8a6a80970b4f071")
+        resp = requests.get(f"https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey={self.API_KEY}")
 
         resp = json.loads(resp.text)
         self.img = []

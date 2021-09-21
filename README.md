@@ -16,6 +16,14 @@ This is a simple app made with Tkinter library in Python which will show top 10 
 ```bash
 pip install -r requirements.txt
 ```
+* Go to [newsapi.org](https://newsapi.org/)
+* Get an API key from newsapi.org
+* Go to the **main.py** file in **src/** folder
+* Go to line number 16
+* Put the API key in the string -
+```python
+self.API_KEY = "the api key that you had copied"
+```
 * Now you can run the app by - 
 ```bash
 cd src
